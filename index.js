@@ -48,6 +48,7 @@ const bookStore = {
 const bookstoreTitle=document.getElementById("header")
 bookstoreTitle.textContent=bookStore.name
 
+const bookList=document.getElementById(`book-list`)
 bookList.innerHTML="";
 
 bookStore.books.forEach(book=>{
@@ -62,7 +63,7 @@ const bookImage=document.createElement('img')
 bookImage.src= book.imageUrl
 
 
-const bookList=document.getElementById(`book-list`)
+
 
 bookContainer.appendChild(bookTitle);
 bookContainer.appendChild(bookAuthor);
